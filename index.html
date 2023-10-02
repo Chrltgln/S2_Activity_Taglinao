@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* GALLERY CSS */
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+
+    <title>SESSION 2 ACTIVITY</title>
+
+</head>
+
+<body>
+
+    <h1 class="session2Title">SESSION 2 ACTIVITY</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <audio controls style="float: right;">
+                <source src="music/Wille Revillame - Ikaw Na Nga (Official Lyric Video).mp3">
+
+            </audio>
+        </ul>
+
+    </nav>
+    <hr>
+    <br>
+    <h2 class="headerTitle">PERSONAL INFORMATION</h2>
+    <p style="text-align: center;">Hello, everyone! My name is Charlie Taglinao, and I'm 20 years old. I came into this
+        world on June 26, 2003,
+        I hail from the beautiful city of General Trias, situated in the charming province of Cavite, Philippines. </p>
+
+    <br><br><br>
+
+    <h1 class="headerTitle">EDUCATION INFORMATION</h1>
+    <table class="content-table">
+
+        <thead>
+            <tr>
+                <th>ELEMENTARY</th>
+                <th>HIGH-SCHOOL</th>
+                <th>TERTIARY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GENERAL ARTEMIO RICARTE MEMORIAL SCHOOL </td>
+                <td>SAMUEL CHRISTIAN COLLEGE</td>
+                <td>DE LA SALLE UNIVERSITY - DASMARIÑAS (PRESENT)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <br><br>
+
+
+
+    <h2>LANGUAGES I LEARNED</h2>
+    <br>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/CS.png">   
+                <img src="img/CS.png" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">CSHARP PROGRAMMING LANGUAGE</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/java.jpg">
+                <img src="img/java.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">JAVA PROGRAMMING LANGUAGE</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/c_prog.jpg">
+                <img src="img/c_prog.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">C PROGRAMMING LANGUAGE</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/php-logo.gif">
+                <img src="img/php-logo.gif" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">PHP PROGRAMMMING LANGUAGE</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <br><br>
+    <hr>
+    <h2 class="formTitle">IF YOU HAVE ANY CONCERN JUST SEND ME AN EMAIL HERE </h2>
+
+    <!-- USING ATTRIBUTES THAT TACKLED LAST SESSION(action,method,for,name,placeholder,id,value)-->
+
+    <div class="container">
+        <form action="success.html" method="POST">
+            <label for="firstName">FIRST NAME : </label>
+            <input type="text" name="fname" id="firstName" placeholder="Enter your First Name" required>
+
+            <label for="lastName">LAST NAME : </label>
+            <input type="text" name="lname" id="lastName" placeholder="Enter your Last Name" required>
+
+            <label for="midName">MIDDLE NAME : </label>
+            <input type="text" name="mname" id="midName" placeholder="Enter your Surname" required>
+            <br>
+
+            <label for="email">EMAIL-ADDRESS : </label>
+            <input type="text" name="email" id="email" placeholder="Enter your Email" required>
+
+            <label for="phoneNumber">PHONE NUMBER : </label>
+            <input type="number" name="phonenumber" id="phoneNumber" placeholder="Enter your Phone Number" required>
+
+            <label for="gender">GENDER : </label>
+            <select name="gender">
+                <option value="blank"> </option>
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+            </select>
+            <br>
+            <label for="message">MESSAGE :</label><br>
+            <textarea name="message" id="message" cols="130" rows="5" placeholder="Leave a message here"></textarea>
+            <br>
+            <input type="submit" value="SUBMIT" class="btnSubmit" required>
+        </form>
+    </div>
+</body>
+
+</html>

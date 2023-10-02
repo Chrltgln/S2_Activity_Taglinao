@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css">
+    <title>MESSAGE</title>
+    
+
+    <style>
+        h1{
+            padding: 10px;
+            background-color: black;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SUCCESSFULLY SUBMITTED</h1>
+    <!--Span is an inline container use to mark up a part of a text 
+        We use a span to have an id the 3 as a seconds for us to call it into our script
+        -->
+    <div id="countdown">Redirecting in <span id="countdown-num">3</span> seconds.</div>
+    <script>
+        
+        //intialize first the seconds we want before it wil redirect to our home page
+        let seconds = 3; 
+        let countdownNum = document.getElementById('countdown-num');
+
+        function countdown() {
+            seconds--;
+            countdownNum.textContent = seconds;
+
+            if (seconds <= 0) {
+                
+                window.location.href = 'index.html';
+            }
+        }
+        setInterval(countdown, 1000);
+    </script>
+
+
+</body>
+</html>
